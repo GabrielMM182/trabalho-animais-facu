@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>POSTS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
     <body id="pagina-post">
 
+        <div class="superinfo-bg">
+            <div class="superinfo">
+                <p>12 agosto 2020 – 19 agosto 2020</p>
+                <p>AUQMIA 🐱🐈🐶🐕</p>
+            </div>
+        </div>
+
+        <header class="menu-bg">
+            <div class="menu">
+                <div class="menu-logo">
+                    <a href="#">ONG - AUQMIA</a>
+                </div>
+                <nav class="menu-nav js-menu">
+                    <ul>
+                        <li><a href="index.html">Sobre a ONG</a></li>
+                        <li><a href="index.html">Produtos</a></li>
+                        <li><a href="index.html">Planos</a></li>
+                        <li><a href="index.html">Modelos Caninos e Felinos</a></li>
+                        <li><a href="./posts.html">POSTS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
         <section class="adotar_introducao">
             <div class="container">
-                <h2 class="subtitulo_branco">DEIXE SEU COMENTARIO ABAIXO</h2>
+                <h2 class="titulo">DEIXE SEU COMENTARIO ABAIXO</h2>
             </div>
         </section>
         
         <section>
             <div class="container" id="contato-formulario">
                 <div class="campo-mensagem">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea type="text" id="mensagem" placeholder="Escreva aqui..."></textarea>
+                    <label class="titulo" for="mensagem">Mensagem</label>
+                    <textarea type="text" class="contato" id="mensagem" placeholder="Escreva aqui..."></textarea>
                 </div>
                 <div>
                     <button type="submit" class="botao">ENVIAR MENSAGEM</button>
@@ -27,14 +53,27 @@
 
         <section>
             <div class="container">
-                <h2 class="subtitulo">VEJA O QUE O PESSOAL ESTÁ COMENTANDO</h2>
+                <h2 class="titulo">VEJA O QUE O PESSOAL ESTÁ COMENTANDO</h2>
                 <div class="post-feitos">
 
                 </div>
             </div>
         </section>
 
-
+        <section class="newsletter">
+            <div class="newsletter-info">
+                <h1>Newsletter</h1>
+                <p>assine e fique por dentro das novidades da OND</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Seu e-mail">
+                <button type="submit">Assinar</button>
+            </form>
+        </section>
+        
+        <footer class="footer">
+            <p>ONG - AUQMIA© Todos os direitos reservados.</p>
+        </footer>
 
         <script src='js/script.js'></script>
     </body>

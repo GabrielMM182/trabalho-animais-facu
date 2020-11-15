@@ -17,17 +17,17 @@ lex.forEach ((link)=>{
 
 const botao = document.querySelector('.botao')
 const mensagem = document.getElementById('mensagem')
-// const urlPost = 'https://news-api-node.herokuapp.com/api/v1/news/92b5a2a5-0ab5-48ad-90a6-9be44d918f99'
+const urlPost = 'https://news-api-node.herokuapp.com/api/v1/news/99b5b2a5-0ab5-48xd-94a6-9be55d918f99'
 const postFeitos = document.querySelector('.post-feitos')
 
-const novosElementos = (mensagemNova, novoElementoAtribuido) => {
+const novoElemento = (mensagemNova, novoElementoAtribuido) => {
     const novoElemento = novoElementoAtribuido
     const novaMensagem = mensagemNova
     novoElemento.appendChild(novaMensagem)
     postFeitos.appendChild(novoElemento)  
 }
 
-function mostrarMensagens() {
+function exbirMensagens() {
 
     fetch(urlPost)
     .then(function(response) {
@@ -37,23 +37,23 @@ function mostrarMensagens() {
 
         if(postFeitos) {
             data.forEach(dados => {
-                var mensagemNova = document.createTextNode(dados.post)
-                var novoElemento = document.createElement('p')
-                novosElementos(mensagemNova, novoElemento)
+                const mensagemNova = document.createTextNode(dados.post)
+                const novoElemento = document.createElement('p')
+                novoElemento(mensagemNova, novoElemento)
             });
         }
 
     });
 
 }
-mostrarMensagens()
+exibirMensagens()
 
 
 function enviarMensagem() {
 
     if(botao) {
         botao.addEventListener('click', function() {
-            var poster = {
+            const poster = {
                 post: mensagem.value
             };
         
@@ -70,9 +70,9 @@ function enviarMensagem() {
                 .then(function(data) {
 
                     if(postFeitos) {
-                        var mensagemNova = document.createTextNode(data.post)
-                        var novoElemento = document.createElement('p')
-                        novosElementos(mensagemNova, novoElemento)
+                        const mensagemNova = document.createTextNode(data.post)
+                        const novoElemento = document.createElement('p')
+                        novoElemento(mensagemNova, novoElemento)
                     }
             
                 });

@@ -411,3 +411,43 @@ img {
     color: white;
 
 }
+
+.titulo {
+    text-align: center;
+    color: rgb(90, 161, 209);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.contato {
+    font-family: "PT Mono", monospace;
+    font-size: 1.125em;
+    line-height: 1.66667em;
+    color: #1f040d;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid #5795d6;
+    background: transparent;
+    margin-bottom: 1em;
+  }
+
+  .botao {
+    margin: auto;
+    font-family: "PT Mono", monospace;
+    font-size: 1.125em;
+    line-height: 1.66667em;
+    cursor: pointer;
+    color: #000000;
+    text-transform: uppercase;
+    border: 2px solid #428dbf;
+    background: transparent;
+    display: block;
+    width: 200px;
+    padding-top: 5px;
+    -webkit-box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #1b5480;
+    -moz-box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #1b5480;
+    box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #1b5480;
+    transition: .3s;
+  }
